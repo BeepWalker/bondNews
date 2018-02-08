@@ -55,7 +55,9 @@ for articleURL in articleList:
             f.writelines(kwList)
         cumulator += 1
     print('运行中..........')
-print('已经爬取了{}篇文章'.format(cumulator))  
+print('已经爬取了{}篇文章'.format(cumulator))
+
+print('Happy Chinese Junior Year!!!')
         
             
             
