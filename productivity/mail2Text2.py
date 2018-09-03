@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov  6 12:10:13 2017
+Created on Mon Nov  6 12:12:13 2017
 
-@author: user
+@author: beepwalker
 """
 
 import poplib
@@ -131,16 +131,16 @@ def str_merger(str_lst):
 
 if __name__ == '__main__':
   # 输入邮件地址, 口令和POP3服务器地址:
-#  emailaddress = 'glad2meetu@yeah.net'
+#  emailaddress = 'username@yeah.net'
 #  # 注意使用开通POP，SMTP等的授权码
 #  password = ''
 #  pop3_server = 'pop.yeah.net'
 #  
 #  
   
-    emailaddress = 'mailtestretrive@yeah.net'
+    emailaddress = 'username@yeah.net'
   # 注意使用开通POP，SMTP等的授权码
-    password = 'sqm123'
+    password = 'pw'
     pop3_server = 'pop.yeah.net'
   
   
@@ -191,8 +191,8 @@ if __name__ == '__main__':
         msg_headers = get_email_headers(msg)
         content, attachment_files = get_email_cntent(msg, base_save_path)
         bsObj = BeautifulSoup(content,'lxml')
-        start_sub = '尊敬的李卓'
-        end_sub = '贡献'
+        start_sub = '尊敬的qin'
+        end_sub = ''
         content = bsObj.getText()
         content = content[content.find(start_sub):content.find(end_sub)+len(end_sub)]
 #    sss = lst_strip(content.split('、'))
